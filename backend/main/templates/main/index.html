@@ -1,0 +1,50 @@
+{% extends 'main/layout.html' %}
+
+{% block content %}
+<main class="p-4">
+    <h1 class="text-3xl">Conversations</h1>
+
+    <div class="max-w-[500px]">
+        {% for conversation in conversation_list %}
+        <div class="border border-grey-800 my-4 p-4">
+            <div class="text-2xl mb-2">
+                {{ conversation.title }}
+            </div>
+            <div>
+                {% for statement in conversation.statement_set.all %}
+                <div class="border border-orange-100 mb-2 p-3">
+                    <div>
+                    {{ statement.text }}
+                    </div>
+                    <div>
+                        Counts:
+                        {{ statement.agree_count }} —
+                        {{ statement.disagree_count }} —
+                        {{ statement.pass_count }}
+                    </div>
+                    <div>
+                        <form method="post" action="/vote/{{ statement.id }}/agree/" class="inline">
+                            {% csrf_token %}
+                            <input type="submit" value="agree" class="cursor-pointer text-blue-600 hover:underline">
+                        </form> |
+                        <form method="post" action="/vote/{{ statement.id }}/disagree/" class="inline">
+                            {% csrf_token %}
+                            <input type="submit" value="disagree" class="cursor-pointer text-blue-600 hover:underline">
+                        </form> |
+                        <form method="post" action="/vote/{{ statement.id }}/pass/" class="inline">
+                            {% csrf_token %}
+                            <input type="submit" value="pass" class="cursor-pointer text-blue-600 hover:underline">
+                        </form>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% empty %}
+        <div>
+            <em>(empty)</em>
+        </div>
+        {% endfor %}
+    </div>
+</main>
+{% endblock %}
