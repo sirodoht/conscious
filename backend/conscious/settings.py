@@ -70,7 +70,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "conscious.wsgi.application"
 
-# AUTH_USER_MODEL = "main.User"
+AUTH_USER_MODEL = "main.User"
 
 
 # Database
