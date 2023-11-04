@@ -1,0 +1,43 @@
+openapi: 3.0.0
+info:
+  title: Conversations API
+  version: 1.0.0
+paths:
+  /api/conversations/{conversation_id}/votes/active/:
+    post:
+      summary: Vote on a conversation
+      operationId: voteOnConversation
+      parameters:
+        - in: path
+          name: conversation_id
+          required: true
+          schema:
+            type: string
+          description: ID of the conversation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user_id:
+                  type: integer
+                  example: 1
+                vote:
+                  type: string
+                  enum:
+                    - agree
+                    - disagree
+                    - pass
+      responses:
+        '201':
+          description: Vote Created
+      security:
+        - BearerAuth: []
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
