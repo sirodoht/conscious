@@ -2,3 +2,4 @@
 *.pyc
 db.sqlite3
 ansible/.envrc
+backend/static/
