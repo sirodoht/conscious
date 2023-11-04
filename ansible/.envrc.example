@@ -1,0 +1,20 @@
+# inventory.yaml
+
+# Server IP and user with ssh access
+export ANSIBLE_HOST=your.ip.address.here
+export ANSIBLE_USER=root
+
+
+# vars.yaml
+
+# Show exceptions and tracebacks on errors
+export DEBUG_MODE=1
+
+# Useful for setting up the webserver when deploying and setting urls on emails
+export DOMAIN_NAME=example.com
+
+# Required by Wagtail admin, protocol + domain
+export EMAIL=email@example.com
+
+# Used by Django to encrypt session login cookies
+export SECRET_KEY=xxx

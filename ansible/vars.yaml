@@ -1,0 +1,5 @@
+---
+debug_mode: "{{ lookup('env', 'DEBUG_MODE') }}"
+domain_name: "{{ lookup('env', 'DOMAIN_NAME') }}"
+email: "{{ lookup('env', 'EMAIL') }}"
+secret_key: "{{ lookup('env', 'SECRET_KEY') }}"

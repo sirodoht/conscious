@@ -1,0 +1,18 @@
+[uwsgi]
+master = True
+module = conscious.wsgi:application
+virtualenv = venv
+strict = True
+http-socket = :5000
+need-app = True
+vacuum = True
+max-requests = 5000
+processes = 5
+harakiri = 20
+enable-threads = True
+die-on-term = true
+
+env = DJANGO_SETTINGS_MODULE=conscious.settings
+env = DOMAIN_NAME={{ domain_name }}
+env = SECRET_KEY={{ secret_key }}
+env = DEBUG={{ debug_mode }}

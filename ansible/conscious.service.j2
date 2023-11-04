@@ -1,0 +1,16 @@
+[Unit]
+Description=conscious
+After=network.target
+
+[Service]
+Type=simple
+User=deploy
+Group=www-data
+ExecStart=/var/www/conscious/backend/venv/bin/uwsgi --ini /etc/uwsgi/conscious.uwsgi.ini
+ExecReload=/bin/kill -HUP $MAINPID
+WorkingDirectory=/var/www/conscious/backend
+TimeoutSec=15
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
