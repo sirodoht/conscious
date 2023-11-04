@@ -18,9 +18,7 @@ class UserAdmin(admin.ModelAdmin):
 
 @admin.register(models.Participant)
 class ParticipantAdmin(admin.ModelAdmin):
-    list_display = (
-        "id",
-    )
+    list_display = ("id",)
 
 
 @admin.register(models.Conversation)
