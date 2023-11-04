@@ -7,6 +7,7 @@ urlpatterns = [
     path("", views.index, name="index"),
 ]
 
+# mobile app API
 urlpatterns += [
-    path("api/conversations/<conversation_id>/votes/active/"),
+#    path("api/conversations/<conversation_id>/votes/active/"),
 ]
