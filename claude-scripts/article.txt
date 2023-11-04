@@ -1,0 +1,163 @@
+How Silicon Valley doomers are shaping Rishi Sunak’s AI plans
+Sep. 14th, 2023
+Send to Kindle
+
+Press play to listen to this article
+
+Voiced by artificial intelligence.
+
+LONDON — Back in the spring, Britain was sounding pretty relaxed about the rise of AI. Then something changed.
+
+The country's artificial intelligence white paper — unveiled in March — dealt with the “existential risks” of the fledgling tech in just four words: high impact, low probability.
+
+Less than six months later, Prime Minister Rishi Sunak seems newly troubled by runaway AI. He has announced an international AI Safety Summit, referred to “existential risk” in speeches, and set up an AI safety taskforce with big global aspirations.
+
+Helping to drive this shift in focus is a chorus of AI Cassandras associated with a controversial ideology popular in Silicon Valley.
+
+Known as "Effective Altruism," the movement was conceived in the ancient colleges of Oxford University, bankrolled by the Silicon Valley elite, and is increasingly influential on the U.K.’s positioning on AI.
+
+Not everyone's convinced it's the right approach, however, and there's mounting concern Britain runs the risk of regulatory capture.
+
+Effective altruists claim that super-intelligent AI could one day destroy humanity, and advocate policy that’s focused on the distant future rather than the here-and-now. Despite the potential risks, EAs broadly believe super-intelligent AI should be pursued at all costs.
+
+“The view is that the outcome of artificial super-intelligence will be binary,” says Émile P. Torres, philosopher and former EA, turned critic of the movement. “That if it's not utopia, it's annihilation.” 
+
+In the U.K., key government advisers sympathetic to the movement’s concerns, combined with Sunak’s close contact with leaders of the AI labs – which have longstanding ties to the movement – have helped push “existential risk” right up the U.K.’s policy agenda.
+
+When ChatGPT-mania reached its zenith in April, tech investor Ian Hogarth penned a viral Financial Times article warning that the race to “God-like AI” “could usher in the obsolescence or destruction of the human race” – urging policymakers and AI developers to pump the brakes. 
+
+It echoed the influential “AI pause” letter calling for a moratorium on “giant AI experiments," and, in combination with a later letter saying AI posed an extinction risk, helped fuel a frenzied media cycle that prompted Sunak to issue a statement claiming he was “looking very carefully” at this class of risks.
+
+Known as "Effective Altruism," the movement was conceived in the ancient colleges of Oxford University, bankrolled by the Silicon Valley elite, and is increasingly influential on the U.K.’s positioning on AI | Carl Court/Getty Images
+
+“These kinds of arguments around existential risk or the idea that AI would develop super-intelligence, that was very much on the fringes of credible discussion,” says Mhairi Aitken, an AI ethics researcher at the Alan Turing Institute. “That's really dramatically shifted in the last six months.”
+
+The EA community credited Hogarth’s FT article with telegraphing these ideas to a mainstream audience, and hailed his appointment as chair of the U.K.’s Foundation Model Taskforce as a significant moment.
+
+Under Hogarth, who has previously invested in AI labs Anthropic, Faculty, Helsing, and AI safety firm Conjecture, the taskforce announced a new set of partners last week – a number of whom have ties to EA.
+
+Three of the four partner organizations on the lineup are bankrolled by EA donors. The Centre for AI Safety is the organization behind the “AI extinction risk” letter (the “AI pause” letter was penned by another EA-linked organization, the Future of Life Institute). Its primary funding – to the tune of $5.2 million – comes from major EA donor organization, Open Philanthropy.  
+
+Another partner is Arc Evals, which “works on assessing whether cutting-edge AI systems could pose catastrophic risks to civilization.”
+
+It’s a project of the Alignment Research Centre, an organization that has received $1.5 million from Open Philanthropy, $1.25 million from high-profile EA Sam Bankman-Fried's FTX Foundation (which it promised to return after the implosion of his crypto empire), and $3.25 million from the Survival and Flourishing Fund, set up by Skype founder and prominent EA, Jaan Tallinn. Arc Evals is advised by Open Philanthropy CEO, Holden Karnofsky. 
+
+Finally, the Community Intelligence Project, a body working on new governance models for transformative technology, began life with an FTX regrant, and a co-founder appealed to the EA community for funding and expertise this year. 
+
+Joining the taskforce as one of two researchers is Cambridge professor David Krueger, who has received a $1 million grant from Open Philanthropy to further his work to “reduce the risk of human extinction resulting from out-of-control AI systems”. He describes himself as “EA-adjacent.” One of the PhD students Kruger advises, Nitarshan Rajkumar, has been working with the British government's Department for Science, Innovation and Technology (DSIT) as an AI policy adviser since April. 
+
+A range of national security figures and renowned computer scientist, Yoshua Bengio, are also joining the taskforce as advisers. 
+
+Combined with its rebranding as a “Frontier AI Taskforce” which projects its gaze into the future of AI development, the announcements confirmed the ascendancy of existential risk on the U.K.’s AI agenda. 
+
+Hogarth told the FT that biosecurity risks – like AI systems designing novel viruses – and AI-powered cyber-attacks weigh heavily on his mind. The taskforce is intended to address these threats, and to help build safe and reliable “frontier” AI models.
+
+When ChatGPT-mania reached its zenith in April, tech investor Ian Hogarth penned a viral Financial Times article warning that the race to “God-like AI” “could usher in the obsolescence or destruction of the human race” | John Phillips/Getty Images
+
+“The focus of the Frontier AI Taskforce and the U.K.’s broader AI strategy extends to not only managing risk, but ensuring the technology’s benefits can be harnessed and its opportunities realized across society,” said a government spokesperson, who disputed the influence of EA on its AI policy.
+
+But some researchers worry that the more prosaic threats posed by today’s AI models, like bias, data privacy, and copyright issues, have been downgraded. It’s “a really dangerous distraction from the discussions we need to be having around regulation of AI,” says Aitken. “It takes a lot of the focus away from the very real and ethical risks and harms that AI presents today.”
+
+The EA movement’s links to Silicon Valley also prompt some to question its objectivity. The three most prominent AI labs, OpenAI, DeepMind and Anthropic, all boast EA connections – with traces of the movement variously imprinted on their ethos, ideology and wallets.
+
+Open Philanthropy, set up by Facebook co-founder Dustin Moskovitz, provided OpenAI with a start-up loan of $30 million in 2017. Anthropic has pulled in hundreds of millions from EA organizations and individuals, and the executive team have a tangled web of links to movement. Skype’s Tallinn was also an early investor and former director in DeepMind, whose AI safety teams are populated with EA adherents.  
+
+Tech mogul Elon Musk claims to be a fan of the closely related “longtermist” ideology, calling it a “close match” to his own. Musk recently hired Dan Hendrycks, director of Center for AI Safety, as an adviser to his new start-up, xAI, which is also doing its part to prevent the AI apocalypse.
+
+To counter the threat, the EA movement is throwing its financial heft behind the field of AI safety. Head of Open Philanthropy, Harold Karnofsky, wrote a February blog post announcing a leave of absence to devote himself to the field, while an EA career advice center, 80,000 hours, recommends “AI safety technical research” and “shaping future governance of AI” as the two top careers for EAs.
+
+Tech mogul Elon Musk claims to be a fan of the closely related “longtermist” ideology, calling it a “close match” to his own | Dimitrios Kambouris/Getty Images for The Met Museum/Vogue
+
+Trading in an insular jargon of “X-risk” (existential risks) and “p(doom)” (the probability of our impending annihilation), the AI-focused branch of effective altruism is fixated on issues like “alignment” – how closely AI models are attuned to humanity’s value systems – amid doom-laden warnings about “proliferation” – the unchecked propagation of dangerous AI.  
+
+Despite its popularity among a cohort of technologists, critics say the movement’s thinking lacks evidence and is alarmist. A vocal critic, former Googler Timnit Gebru, has denounced this “dangerous brand of AI safety,” noting that she’d seen the movement gain “alarming levels of influence” in Silicon Valley.
+
+Meanwhile, the “strong intermingling” of EAs and companies building AI “has led…this branch of the community to be very subservient to the AI companies,” says Andrea Miotti, head of strategy and governance at AI safety firm Conjecture. He calls this a “real regulatory capture story.” 
+
+Citing the Center for AI Safety’s extinction risk letter, Hogarth called on AI specialists and safety researchers to join the taskforce’s efforts in June, noting that at “a pivotal moment, Rishi Sunak has stepped up and is playing a global leadership role."
+
+On stage at the Tony Blair Institute conference in July, Hogarth – perspiring in the midsummer heat but speaking with composed conviction – struck an optimistic note. “We want to build stuff that allows for the U.K. to really have the state capacity to, like, engineer the future here,” he said.
+
+Although the taskforce was initially intended to build up sovereign AI capability, Hogarth’s arrival saw a new emphasis on AI safety. The U.K. government’s £100 million commitment is “the largest amount ever committed to this field by a nation state," he tweeted. 
+
+Despite its popularity among a cohort of technologists, critics say the movement’s thinking lacks evidence and is alarmist | Hollie Adams/Getty Images
+
+The taskforce recruitment ad was shared on the Effective Altruism forum, and Hogarth’s appointment was announced in Effective Altruism UK’s July newsletter. 
+
+Hogarth is not the only one in government who appears to be sympathetic to the EA movement’s arguments. Matt Clifford, chair of government R&D body, ARIA, and adviser to the AI taskforce as well as AI sherpa for the safety summit, has urged EAs to jump aboard the government’s latest AI safety push. 
+
+“I would encourage any of you who care about AI safety to explore opportunities to join or be seconded into government, because there is just a huge gap of knowledge and context on both sides,” he said at the Effective Altruism Global conference in London in June. 
+
+“Most people engaged in policy are not familiar … with arguments that would be familiar to most people in this room about risk and safety,” he added, but cautioned that hyping apocalyptic risks was not typically an effective strategy when it came to dealing with policymakers.  
+
+Clifford said that ARIA would soon announce directors who will be in charge of grant-giving across different areas. “When you see them, you will see there is actually a pretty good overlap with some prominent EA cause areas,” he told the crowd. 
+
+A British government spokesperson said Clifford is “not part of the core Effective Altruism movement.”
+
+Influential civil servants also have EA ties. Supporting the work of the AI taskforce is Chiara Gerosa, who in addition to her government work is facilitating an introductory AI safety course “for a cohort of policy professionals” for BlueDot Impact, an organization funded by Effective Ventures, a philanthropic fund that supports EA causes. 
+
+The course “will get you up to speed on extreme risks from AI and governance approaches to mitigating these risks,” according to the website, which states alumni have gone on to work for the likes of OpenAI, GovAI, Anthropic, and DeepMind.  
+
+People close to the EA movement say that its disciples see the U.K.’s AI safety push as encouragement to get involved and help nudge policy along an EA trajectory. 
+
+EAs are “scrambling to be part of Rishi Sunak’s announced Foundation Model Taskforce and safety conference,” according to an AI safety researcher who asked not to be named as they didn’t want to risk jeopardizing EA connections.
+
+EAs are “scrambling to be part of Rishi Sunak’s announced Foundation Model Taskforce and safety conference,” according to an AI safety researcher | Pool photo by Justin Tallis via AFP/Getty Images
+
+“One said that while Rishi is not the ‘optimal’ candidate, at least he knows X-risk,” they said. “And that ‘we’ need political buy-in and policy."  
+
+“The foundation model taskforce is really centring the voices of the private sector, of industry ... and that in many cases overlaps with membership of the Effective Altruism movement,” says Aitken. “That to me, is very worrying … it should really be centring the voices of impacted communities, it should be centring the voices of civil society.” 
+
+Jack Stilgoe, policy co-lead of Responsible AI, a body funded by the U.K.’s R&D funding agency, is concerned about “the diversity of the taskforce.” “If the agenda of the taskforce somehow gets captured by a narrow range of interests, then that would be really, really bad,” he says, adding that the concept of alignment “offers a false solution to an imaginary problem."
+
+A spokesperson for Open Philanthropy, Michael Levine, disputed that the EA movement carried any water for AI firms. “Since before the current crop of AI labs existed, people inspired by effective altruism were calling out the threats of AI and the need for research and policies to reduce these risks; many of our grantees are now supporting strong regulation of AI over objections from industry players.”
+
+Birthed at Oxford University by rationalist utilitarian philosopher William MacAskill, EA began life as a technocratic preoccupation with how charitable donations could be optimized to wring out maximal benefit for causes like global poverty and animal welfare.  
+
+Over time, it fused with transhumanist and techno-utopian ideals popular in Silicon Valley, and a mutated version called “long-termism” that is fixated on ultra-long-term timeframes now dominates. MacAskill’s most recent book What We Owe the Future conceptualizes a million-year timeframe for humanity and advocates the colonization of space.  
+
+EA began life as a technocratic preoccupation with how charitable donations could be optimized to wring out maximal benefit for causes like global poverty and animal welfare. Over time, it fused with transhumanist and techno-utopian ideals popular in Silicon Valley | Mason Trinca/Getty Images
+
+Oxford University remains an ideological hub for the movement, and has spawned a thriving network of think tanks and research institutes that lobby the government on long-term or existential risks, including the Centre for the Governance of AI (GovAI) and the Future of Humanity Institute at Oxford University. 
+
+Other EA-linked organizations include Cambridge University’s Centre for the Study of Existential Risk, which was co-founded by Tallinn and receives funding from his Survival and Flourishing Fund – which is also the primary funder of the Centre for Long Term Resilience, set up by former civil servants in 2020. 
+
+The think tanks tend to overlap with leading AI labs, both in terms of membership and policy positions. For example, the founder and former director of GovAI, Allan Dafoe, who remains chair of the advisory board, is also head of long-term AI strategy and governance at DeepMind.  
+
+“We are conscious that dual roles of this form warrant careful attention to conflicts of interest,” reads the GovAI website.
+
+GovAI, OpenAI and Anthropic declined to offer comment for this piece. A Google DeepMind spokesperson said: "We are focused on advancing safe and responsible AI."
+
+The movement has been accruing political capital in the U.K. for some time, says Luke Kemp, a research affiliate with the Centre for the Study of Existential Risk who doesn’t identify as EA. “There’s definitely been a push to place people directly out of existential risk bodies into policymaking positions,” he says. 
+
+The movement has been accruing political capital in the U.K. for some time, says Luke Kemp, a researcher at the Centre for the Study of Existential Risk who doesn’t identify as EA | Pool photo by Stefan Rousseau via AFP/Getty Images
+
+CLTR's head of AI policy, Jess Whittlestone, is in the process of being seconded to DSIT on a one day a week basis to assist on AI policy leading up to the AI Safety Summit, according to a CLTR August update seen by POLITICO. In the interim, she is informally advising several policy teams across DSIT.
+
+A former specialist adviser to the Cabinet Office meanwhile, Markus Anderljung, is now head of policy at GovAI. 
+
+Kemp says he has expressed reservations about existential risk organizations attempting to get staff members seconded to government. “We can't be trusted as objective and fair regulators or scholars, if we have such deep connections to the bodies we're trying to regulate,” he says.   
+
+“I share the concern about AI companies dominating regulatory discussions, and have been advocating for greater independent expert involvement in the summit to reduce risks of regulatory capture,” said CLTR’s Head of AI Policy, Dr Jess Whittlestone. “It is crucial for U.K. AI policy to be informed by diverse perspectives.”
+
+Instead of the risks of existing foundation models like GPT-4, EA-linked groups and AI companies tend to talk up the “emergent” risks of frontier models — a forward-looking stance that nudges the regulatory horizon into the future.
+
+This framing “is a way of suggesting that that's why you need to have Big Tech in the room – because they are the ones developing these frontier models,” suggests Aitken.
+
+Earlier in July, CLTR and GovAI collaborated on a paper about how to regulate so-called frontier models, alongside members of DeepMind, OpenAI, and Microsoft and academics. The paper explored the controversial idea of licensing the most powerful AI models, a proposal that’s been criticized for its potential to cement the dominance of leading AI firms.  
+
+Earlier in July, CLTR and GovAI collaborated on a paper about how to regulate so-called frontier models, alongside members of DeepMind, OpenAI, and Microsoft and academics | Lionel Bonaventure/AFP via Getty Images
+
+CLTR presented the paper to No. 10 with the prime minister’s special advisers on AI and the director and deputy director of DSIT in attendance, according to the CLTR memo.  
+
+Such ideas appear to be resonating. In addition to announcing the “Frontier AI Taskforce”, the government said in September that the AI Summit would focus entirely on the regulation of “frontier AI."
+
+The British government disputes the idea that its AI policy is narrowly focused. “We have engaged extensively with stakeholders in creating our AI regulation white paper, and have received a broad and diverse range of views as part of the recently closed consultation process which we will respond to in due course,” said a spokesperson. 
+
+Spokespeople for CLTR and CSER said that both groups focus on risks across the spectrum, from near-term to long-term, while a CLTR spokesperson stressed that it’s an independent and non-partisan think tank.
+
+Some say that it’s the external circumstances that have changed, rather than the effectiveness of the EA lobby. CSER professor Haydn Belfield, who identifies as an EA, says that existential risk think tanks have been petitioning the government for years – on issues like pandemic preparedness and nuclear risk in addition to AI.
+
+Although the government appears more receptive to their overtures now, “I'm not sure we've gotten any better at it,” he says. “I just think the world's gotten worse.”
+
+Update: This story has been updated to clarify Luke Kemp's job title and correct a name.
