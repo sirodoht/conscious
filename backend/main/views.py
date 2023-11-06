@@ -18,6 +18,16 @@ def index(request):
     conversation_list = models.Conversation.objects.all()
     return render(request, "main/index.html", locals())
 
+def get_conversations(request):
+    if request.method != "GET":
+        return HttpResponseNotAllowed(["GET"])
+
+    conversation_list = models.Conversation.objects.all()
+    return JsonResponse(
+            {
+                "conversations": list(map(lambda x: x.json(), conversation_list))
+            }
+        )
 
 def gate(request):
     return render(request, "main/gate.html")

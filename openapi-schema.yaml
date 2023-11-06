@@ -3,6 +3,13 @@ info:
   title: Conversations API
   version: 1.0.0
 paths:
+  /api/conversations:
+    get:
+      summary: Get all conversations
+      operationId: getConversations
+      responses:
+        '200':
+          description: Conversations returned
   /api/conversations/{conversation_id}/votes/active/:
     post:
       summary: Vote on a conversation
