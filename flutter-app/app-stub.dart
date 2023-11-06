@@ -31,8 +31,10 @@ class MyAppState extends State<MyApp> {
     // TODO: Validate api key and convo id fields before starting.
     _timer = Timer.periodic(const Duration(seconds: 5), (timer) {
       final mockUserId = Random().nextInt(100);
+      // TODO: Get the actual voteType from SegmentedButton.
+      final voteType = "agree";
       _addToLog('Detected user $mockUserId. Voted xxx.');
-      print("POST Authorization:${apiKeyController.text} userId=$mockUserId https://example.com/conversations/${conversationIdController.text}/votes/active");
+      print("POST Authorization:${apiKeyController.text} userId=$mockUserId voteType=$voteType https://example.com/conversations/${conversationIdController.text}/votes/active");
     });
 //     NfcManager.instance.startSession(onDiscovered: (NfcTag tag) async {
 //       final uri = tag.data['uri'];
