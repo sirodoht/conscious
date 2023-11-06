@@ -1,8 +1,7 @@
-// Paste into this editor to test run: https://dartpad.dev/?
-
 import 'package:flutter/material.dart';
 import 'dart:async';
-//import 'package:nfc_manager/nfc_manager.dart'; 
+import 'dart:math';
+//import 'package:nfc_manager/nfc_manager.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +14,8 @@ class MyApp extends StatefulWidget {
 
 class MyAppState extends State<MyApp> {
   final TextEditingController apiKeyController = TextEditingController();
-  final TextEditingController conversationIdController = TextEditingController();
+  final TextEditingController conversationIdController =
+      TextEditingController();
 
   String _log = '';
   bool _isLogging = false;
@@ -23,13 +23,16 @@ class MyAppState extends State<MyApp> {
 
   void _addToLog(String event) {
     setState(() {
-      _log += '$event\n'; 
+      _log += '$event\n';
     });
   }
 
   void _startListening() {
+    // TODO: Validate api key and convo id fields before starting.
     _timer = Timer.periodic(const Duration(seconds: 5), (timer) {
-      _addToLog('Dummy event logged'); 
+      final mockUserId = Random().nextInt(100);
+      _addToLog('Detected user $mockUserId. Voted xxx.');
+      print("POST Authorization:${apiKeyController.text} userId=$mockUserId https://example.com/conversations/${conversationIdController.text}/votes/active");
     });
 //     NfcManager.instance.startSession(onDiscovered: (NfcTag tag) async {
 //       final uri = tag.data['uri'];
@@ -39,26 +42,26 @@ class MyAppState extends State<MyApp> {
 //       }
 //     });
   }
-  
+
   void _stopListening() {
     _timer?.cancel();
-    _timer = null; 
+    _timer = null;
   }
-  
+
   void _toggleListening() {
     setState(() {
       if (_isLogging) {
         // Stop logging
         _isLogging = false;
-        _stopListening(); // Implement stop logic
-      } else {  
-        // Start logging  
+        _stopListening();
+      } else {
+        // Start logging
         _isLogging = true;
-        _startListening(); // Implement start logic
+        _startListening();
       }
     });
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -72,19 +75,17 @@ class MyAppState extends State<MyApp> {
                 decoration: const InputDecoration(
                   labelText: 'API Key',
                   border: OutlineInputBorder(),
-                ), 
+                ),
               ),
               const SizedBox(height: 8),
-
               TextField(
                 controller: conversationIdController,
                 decoration: const InputDecoration(
                   labelText: 'Conversation ID',
                   border: OutlineInputBorder(),
-                ), 
+                ),
               ),
               const SizedBox(height: 8),
-
               SegmentedButton(
                 segments: const <ButtonSegment>[
                   ButtonSegment(value: 0, label: Text('Agree')),
@@ -94,16 +95,14 @@ class MyAppState extends State<MyApp> {
                 selected: const {0},
               ),
               const SizedBox(height: 8),
-
               ElevatedButton(
                 onPressed: _toggleListening,
                 style: ElevatedButton.styleFrom(
-                  minimumSize: const Size(double.infinity, 60), 
+                  minimumSize: const Size(double.infinity, 60),
                 ),
                 child: Text(_isLogging ? 'Stop' : 'Start'),
               ),
               const SizedBox(height: 8),
-
               Expanded(
                 child: TextField(
                   readOnly: true,
