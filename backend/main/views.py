@@ -19,6 +19,10 @@ def index(request):
     return render(request, "main/index.html", locals())
 
 
+def gate(request):
+    return render(request, "main/gate.html")
+
+
 def vote(request, statement_id, value):
     if request.method != "POST":
         return HttpResponseNotAllowed(["POST"])
