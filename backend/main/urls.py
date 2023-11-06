@@ -7,6 +7,7 @@ urlpatterns = [
     path("", views.index, name="index"),
     path("gate/", views.gate, name="gate"),
     path("vote/<int:statement_id>/<slug:value>/", views.vote, name="vote"),
+    path("conversation/<slug:conversation_id>/", views.conversation, name="conversation"),
 ]
 
 # API
