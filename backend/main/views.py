@@ -33,6 +33,12 @@ def gate(request):
     return render(request, "main/gate.html")
 
 
+def conversation(request, conversation_id):
+    conversation = get_object_or_404(models.Conversation, id=conversation_id)
+    statement = conversation.get_next_available_statement(request.user)
+    return render(request, "main/conversation.html", locals())
+
+
 def vote(request, statement_id, value):
     if request.method != "POST":
         return HttpResponseNotAllowed(["POST"])
@@ -40,16 +46,13 @@ def vote(request, statement_id, value):
     if value not in ("agree", "disagree", "pass"):
         return HttpResponseBadRequest()
     statement = get_object_or_404(models.Statement, id=statement_id)
-    participant = models.Participant.objects.create(
-        public_id="a" + str(randint(100, 999))
-    )
     vote = models.Vote.objects.create(
         value=value,
         statement=statement,
-        participant=participant,
+        user=request.user,
     )
     messages.add_message(request, messages.INFO, "vote registered")
-    return redirect("index")
+    return redirect("conversation", conversation_id=statement.conversation.id)
 
 
 @csrf_exempt
@@ -80,13 +83,10 @@ def api_vote(request, conversation_id):
         statement = models.Statement.objects.filter(conversation=conversation).latest(
             "created_at"
         )
-        participant, _ = models.Participant.objects.get_or_create(
-            public_id=participant_public_id
-        )
         vote = models.Vote.objects.create(
             value=vote_value,
             statement=statement,
-            participant=participant,
+            user=request.user,
         )
         return JsonResponse(
             {

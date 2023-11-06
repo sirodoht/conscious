@@ -12,13 +12,6 @@ class User(AbstractUser):
         return self.username
 
 
-class Participant(models.Model):
-    public_id = models.CharField(max_length=100, unique=True)
-
-    def __str__(self):
-        return str(self.id)
-
-
 class Conversation(models.Model):
     title = models.CharField(max_length=200)
     active_statement = models.ForeignKey(
@@ -29,6 +22,12 @@ class Conversation(models.Model):
         related_name="active",
     )
     created_at = models.DateTimeField(auto_now_add=True)
+
+    # return a random statement that the user has not voted on yet
+    def get_next_available_statement(self, user):
+        return Statement.objects.filter(conversation=self).exclude(
+            vote__user=user
+        ).order_by("?").first()
 
     def __str__(self):
         return self.title
@@ -83,7 +82,7 @@ class Vote(models.Model):
     value = models.CharField(max_length=20, choices=VALUE_CHOICES)
     statement = models.ForeignKey(Statement, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
-    participant = models.ForeignKey(Participant, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return f"{self.value} ({self.statement.id}: {self.statement.text[:10]}...)"

@@ -16,11 +16,6 @@ class UserAdmin(admin.ModelAdmin):
     search_fields = ("username", "email")
 
 
-@admin.register(models.Participant)
-class ParticipantAdmin(admin.ModelAdmin):
-    list_display = ("id",)
-
-
 @admin.register(models.Conversation)
 class ConversationAdmin(admin.ModelAdmin):
     list_display = (
