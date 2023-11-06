@@ -33,6 +33,13 @@ class Conversation(models.Model):
     def __str__(self):
         return self.title
 
+    def json(self):
+        return {
+            "title": self.title,
+            "created_at": self.created_at,
+            "active_statement": self.active_statement
+        }
+
 
 class Statement(models.Model):
     text = models.CharField(max_length=300)

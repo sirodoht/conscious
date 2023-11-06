@@ -8,8 +8,13 @@ urlpatterns = [
     path("vote/<int:statement_id>/<slug:value>/", views.vote, name="vote"),
 ]
 
-# mobile app API
+# API
 urlpatterns += [
+    path(
+        "api/conversations",
+        views.get_conversations,
+        name="get_conversations"
+    ),
     path(
         "api/conversations/<slug:conversation_id>/votes/active/",
         views.api_vote,
