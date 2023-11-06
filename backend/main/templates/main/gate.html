@@ -1,0 +1,14 @@
+{% extends 'main/layout.html' %}
+
+{% block content %}
+<main class="p-4">
+    <h1 class="text-3xl">The Gate</h1>
+
+    <div class="max-w-[500px]">
+	    <form action="{% url "tokenauth:login" %}?next={{ request.GET.next }}" method="post">{% csrf_token %}
+		    Your email address: <input name="email" type="email" autofocus />
+		    <button type="submit">Log in or register</button>
+	    </form>
+    </div>
+</main>
+{% endblock %}

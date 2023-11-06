@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "tokenauth",
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,17 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+AUTHENTICATION_BACKENDS = (
+    "tokenauth.auth_backends.EmailTokenBackend",
+    "django.contrib.auth.backends.ModelBackend",
+)
+
+LOGIN_URL = "/"
+LOGIN_REDIRECT_URL = "/"
+
 ROOT_URLCONF = "conscious.urls"
+
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 TEMPLATES = [
     {
