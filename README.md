@@ -37,6 +37,35 @@ Headers:
 Authorization: Bearer <api_key>
 ```
 
+## Deployment
+
+We are using ansible to provision machines.
+
+```sh
+# install ansible
+cd ansible/
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+# customise configuration
+cp .envrc.example .envrc
+vim .envrc
+
+# load env variables
+source .envrc
+
+# test host is accesible
+ansible all -m ping
+ansible-inventory --list
+
+# run playbook
+ansible-playbook playbook.yaml --verbose
+
+# run playbook on new commits
+ansible-playbook -v playbook.yaml --start-at-task="clone"
+```
+
 ## License
 
 MIT
