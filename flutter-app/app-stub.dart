@@ -7,6 +7,8 @@ void main() {
   runApp(MyApp());
 }
 
+enum VoteType { disagree, pass, agree }
+
 class MyApp extends StatefulWidget {
   @override
   MyAppState createState() => MyAppState();
@@ -16,6 +18,7 @@ class MyAppState extends State<MyApp> {
   final TextEditingController apiKeyController = TextEditingController();
   final TextEditingController conversationIdController =
       TextEditingController();
+  VoteType voteType = VoteType.pass;
 
   String _log = '';
   bool _isLogging = false;
@@ -32,8 +35,7 @@ class MyAppState extends State<MyApp> {
     _timer = Timer.periodic(const Duration(seconds: 5), (timer) {
       final mockUserId = Random().nextInt(100);
       // TODO: Get the actual voteType from SegmentedButton.
-      final voteType = "agree";
-      _addToLog('Detected user $mockUserId. Voted xxx.');
+      _addToLog('Detected user $mockUserId. Voted ${voteType.name}.');
       print("POST Authorization:${apiKeyController.text} userId=$mockUserId voteType=$voteType https://example.com/conversations/${conversationIdController.text}/votes/active");
     });
 //     NfcManager.instance.startSession(onDiscovered: (NfcTag tag) async {
@@ -63,6 +65,12 @@ class MyAppState extends State<MyApp> {
       }
     });
   }
+  
+  void _updateSelection(Set<VoteType> newSelection) {
+    setState(() {
+      voteType = newSelection.first;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -88,13 +96,18 @@ class MyAppState extends State<MyApp> {
                 ),
               ),
               const SizedBox(height: 8),
-              SegmentedButton(
-                segments: const <ButtonSegment>[
-                  ButtonSegment(value: 0, label: Text('Agree')),
-                  ButtonSegment(value: 1, label: Text('Disagree')),
-                  ButtonSegment(value: 2, label: Text('Pass')),
+              SegmentedButton<VoteType>(
+                segments: const <ButtonSegment<VoteType>>[
+                  ButtonSegment<VoteType>(value: VoteType.agree, label: Text('Agree')),
+                  ButtonSegment<VoteType>(value: VoteType.disagree, label: Text('Disagree')),
+                  ButtonSegment<VoteType>(value: VoteType.pass, label: Text('Pass')),
                 ],
-                selected: const {0},
+                selected: <VoteType>{voteType},
+                onSelectionChanged: (Set<VoteType> newSelection) {
+                  setState(() {
+                    voteType = newSelection.first;
+                  });
+                },
               ),
               const SizedBox(height: 8),
               ElevatedButton(
