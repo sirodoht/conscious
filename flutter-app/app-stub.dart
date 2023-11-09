@@ -36,7 +36,7 @@ class MyAppState extends State<MyApp> {
       final mockUserId = Random().nextInt(100);
       // TODO: Get the actual voteType from SegmentedButton.
       _addToLog('Detected user $mockUserId. Voted ${voteType.name}.');
-      print("POST Authorization:${apiKeyController.text} userId=$mockUserId voteType=$voteType https://example.com/conversations/${conversationIdController.text}/votes/active");
+      print("POST Authorization:${apiKeyController.text} userId=$mockUserId voteType=${voteType.name} https://example.com/conversations/${conversationIdController.text}/votes/active");
     });
 //     NfcManager.instance.startSession(onDiscovered: (NfcTag tag) async {
 //       final uri = tag.data['uri'];
