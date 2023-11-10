@@ -103,11 +103,7 @@ class MyAppState extends State<MyApp> {
                   ButtonSegment<VoteType>(value: VoteType.pass, label: Text('Pass')),
                 ],
                 selected: <VoteType>{voteType},
-                onSelectionChanged: (Set<VoteType> newSelection) {
-                  setState(() {
-                    voteType = newSelection.first;
-                  });
-                },
+                onSelectionChanged: _updateSelection,
               ),
               const SizedBox(height: 8),
               ElevatedButton(
